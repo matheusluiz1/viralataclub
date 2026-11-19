@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes do Grupo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+
+            background: linear-gradient(
+                135deg,
+                #141e30,
+                #243b55,
+                #512b81
+            );
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .integrante {
+            width: 200px;
+            padding: 15px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .integrante:hover {
+            transform: translateY(-8px);
+        }
+
+        .integrante img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .integrante h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .integrante {
+                width: 160px;
+            }
+
+            .integrante img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Integrantes do Grupo</h1>
+
+    <div class="galeria">
+
+        <div class="integrante">
+            <img src="michele.jpg" alt="Michele">
+            <h2>Michele</h2>
+        </div>
+
+        <div class="integrante">
+            <img src="sabrina.jpeg" alt="Sabrina">
+            <h2>Sabrina</h2>
+        </div>
+
+        <div class="integrante">
+            <img src="matheus.jpg" alt="Matheus">
+            <h2>Matheus</h2> 
+        </div>
+                <div class="integrante">
+            <img src="julia.jpeg" alt="Julia">
+            <h2>Julia</h2>
+        </div>
+                <div class="integrante">
+            <img src="Rafael.jpeg" alt="Rafael">
+            <h2>Rafael</h2>
+        </div>
+        <div class="integrante">
+            <img src="julio.jpg" alt="Julio">
+            <h2>Julio</h2>
+        </div>
+        <div class="integrante">
+            <img src="tancredo.jpg" alt="Tancredo">
+            <h2>Tancredo</h2>
+        </div>
+    </div>
+
+</body>
+</html>
