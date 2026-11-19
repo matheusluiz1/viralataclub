@@ -1,0 +1,393 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f7c090d7;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+header {
+
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+
+    color: #d66b35;
+
+    font-size: 24px;
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+
+nav a:hover {
+
+    color: #d66b35;
+}
+
+
+section {
+
+    padding: 70px 8%;
+
+    text-align: center;
+}
+
+
+section h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    color: #d66b35;
+}
+
+
+section p {
+
+    max-width: 700px;
+
+    margin: 10px auto;
+}
+
+
+.inicio {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+
+        url("https://purina.com.br/sites/default/files/2024-08/racas-de-cachorros-pequenos-pomerania.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: rgb(255, 255, 255);
+}
+
+
+.inicio h2 {
+
+    color: white;
+
+    font-size: 45px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+    padding: 0 20px;
+    max-width: 1200;
+    margin:0 auto;
+    
+}
+.texto-sobre {
+flex: 1;
+text-align: center;
+
+}
+
+.img-sobre,
+.img-sobre2 {
+width: 300px;
+height: auto;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+.botao {
+
+    display: inline-block;
+
+    background-color: #d66b35;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+
+.botao:hover {
+
+    background-color: #b85224;
+
+    transform: translateY(-2px);
+}
+
+
+button {
+
+    background-color: #d66b35;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+button:hover {
+
+    background-color: #b85224;
+}
+
+
+.filtros {
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    max-width: 900px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.filtros label {
+
+    font-weight: bold;
+}
+
+
+.filtros select {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    background-color: white;
+}
+
+
+.card-conteudo {
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+
+.card-conteudo h3 {
+
+    color: #d66b35;
+
+    font-size: 24px;
+}
+
+
+.card-conteudo p {
+
+    margin: 5px 0;
+}
+
+
+.ajudas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+.card-ajuda {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,0.08);
+}
+
+
+.card-ajuda h3 {
+
+    color: #d66b35;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+.botao img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+
+#contato {
+
+    background-color: #fff0e5;
+}
+
+
+footer {
+
+    background-color: #33251f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px;
+}
+
+
+#mensagemSemResultados {
+
+    display: none;
+
+    color: #777;
+
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .inicio h2 {
+
+        font-size: 32px;
+    }
+
+    
+
+
+    .ajudas {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    section {
+
+        padding: 50px 5%;
+    }
+
+}
