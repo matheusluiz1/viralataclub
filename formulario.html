@@ -71,39 +71,48 @@
     <div class="secao">DADOS PESSOAIS</div>
             <p style="text-align: center;font-size: 15px;">Que bom que você quer adotar com o Vira-lata Club 🐾</p>
             <hr>
-            <label><b>Nome completo:</b></label>
-            <input type="text" placeholder="Sua resposta" required>
+            <label><b>Nome Completo: *</b></label>
+            <input type="text"
+            id="nome"
+            name="nome" 
+            placeholder="Digite seu nome completo" 
+            required>
             
 
-            <label><b>Idade:</b></label>
+            <label><b>Idade: *</b></label>
             <small style="color: #bbb; display: block; margin-top: 5px; margin-bottom: 5px; font-size: 12px;">A adoção será liberada somente para adultos (maiores de 21 anos).</small>
-            <input type="number" placeholder="Sua resposta" required>
+            <input type="number"
+             id="idade"
+             name="idade"
+             placeholder="Digite sua idade"
+             min="21" 
+             required>
 
             <label><b>Telefone com DDD (WhatsApp): *</b></label>
             <input type="number" placeholder="(00) 00000-0000" required>
 
-            <label><b>E-mail:</b></label>
+            <label><b>E-mail: *</b></label>
             <input type="email" placeholder="seu@email.com" required>
 
-            <label><b>CEP:</b></label>
+            <label><b>CEP: *</b></label>
             <input type="number" id="cep" placeholder="00000-000" required>
 
-            <label><b>Logradouro:</b></label>
+            <label><b>Logradouro: *</b></label>
             <input type="text" id="logradouro" placeholder="Sua resposta" required>
 
-            <label><b>Nº:</b></label>
+            <label><b>Nº: *</b></label>
             <input type="number" placeholder="00" required>
 
-            <label><b>Complemento:</b></label>
+            <label><b>Complemento: *</b></label>
             <input type="text" placeholder="Ex: Bloco, Apto" required>
 
-            <label><b>Bairro:</b></label>
+            <label><b>Bairro: *</b></label>
             <input type="text" id="bairro" placeholder="Sua resposta" required>
 
-            <label><b>UF:</b></label>
+            <label><b>UF: *</b></label>
             <input type="text" id="uf" placeholder="Ex: SP" required>
 
-            <label><b>Cidade:</b></label>
+            <label><b>Cidade: *</b></label>
             <input type="text" id="cidade" placeholder="Sua resposta" required>
             <br>
             <button type="submit">Enviar</button>
