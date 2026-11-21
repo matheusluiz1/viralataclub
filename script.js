@@ -1,9 +1,14 @@
+  const botao = document.getElementById("btn-cor");
 
-// Saudação dependendo do horário
-const saudacao = document.getElementById('saudacao');
-const hora = new Date().getHours();
-let mensagem;
- if (hora < 12) {
+    botao.addEventListener("click", () => {
+      const corAtual = document.body.style.backgroundColor;
+      document.body.style.backgroundColor =
+        corAtual === "black" ? "" : "black";
+    });
+ const saudacao = document.getElementById('saudacao');
+ const hora = new Date().getHours();
+  let mensagem;
+  if (hora < 12) {
   mensagem = 'Bom dia! ☀️';
 } else if (hora < 18) {
   mensagem = 'Boa tarde! 🌤️';
