@@ -136,7 +136,7 @@ section p {
 
     font-size: 45px;
 }
-@media (max-width:768px){
+
 
 .sobre-container {
     display: flex;
@@ -161,7 +161,7 @@ height: auto;
 object-fit: contain;
 flex-shrink: 0;
 }
-}
+
 .botao {
 
     display: inline-block;
