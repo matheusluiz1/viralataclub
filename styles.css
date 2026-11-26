@@ -136,7 +136,8 @@ section p {
 
     font-size: 45px;
 }
-
+@media (max-width:768px){
+}
 .sobre-container {
     display: flex;
     justify-content: space-between;
